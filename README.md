@@ -32,7 +32,7 @@ The objective of this project is to develop a machine learning regression model 
 
 ## 🛠️ Tech Stack
 
-* **Language:** Python (v3.12)
+* **Language:** Python
 * **Data Manipulation:** NumPy, Pandas
 * **Data Visualization:** Matplotlib, Seaborn
 * **Machine Learning:** Scikit-Learn
