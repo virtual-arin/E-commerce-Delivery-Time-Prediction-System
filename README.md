@@ -4,6 +4,12 @@ An end-to-end Machine Learning project to accurately forecast delivery times (in
 
 ---
 
+## 🚌 Business Domain
+
+Logistics and Supply Chain
+
+---
+
 ## 🤔 Problem Statement 
 
 In the e-commerce industry, setting accurate delivery expectations is critical. Inaccurate Estimated Time of Arrival (ETA) calculations lead to customer frustration, a high volume of support tickets, and inefficient supply chain management. 
