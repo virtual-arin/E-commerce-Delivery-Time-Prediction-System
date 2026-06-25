@@ -10,7 +10,7 @@ st.set_page_config(
     page_title="Delivery Time Prediction App",
     page_icon="🚚",
     layout="centered"
-)
+)      
 
 st.title("🚚 E-Commerce Delivery Time Predictor")
 st.write("Enter the order details below to estimate the delivery time in days.")
