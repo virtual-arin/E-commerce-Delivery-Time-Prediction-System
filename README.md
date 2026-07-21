@@ -113,3 +113,23 @@ The evaluated models were ranked primarily based on their Coefficient of Determi
 
 ---
    
+## 💼 Business Impact
+
+If this model is integrated into an e-commerce platform, it can help the business in several ways:
+
+* **More accurate delivery estimates** so customers know when to expect their orders.
+* **Higher customer satisfaction** by reducing unexpected delivery delays.
+* **Fewer customer support requests** related to "Where is my order?" because customers receive more reliable ETA(Estimated Time of Arrival.).
+* **Better logistics planning** by identifying orders that are likely to take longer and allowing teams to plan shipments more efficiently.
+* **Improved seller performance monitoring** by comparing predicted and actual delivery times to identify consistently delayed sellers or regions.
+* **Lower operational costs** by reducing emergency shipping, manual interventions, and support workload.
+
+### 👨‍👩‍👧‍👦 Business Outcomes
+
+If deployed in a real e-commerce system, the solution could contribute to:
+
+* More reliable delivery time predictions for every order.
+* Reduced late-delivery complaints.
+* Faster logistics decision-making.
+* Improved customer trust and retention.
+* Better resource utilization across warehouses and delivery partners.
