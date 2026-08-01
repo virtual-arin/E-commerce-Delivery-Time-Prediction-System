@@ -36,7 +36,7 @@ The objective of this project is to develop a machine learning regression model 
 
 ## 🧑‍🍳 Data Preparation
 * Built a machine-learning-ready E-Commerce Delivery Time dataset by merging 9 relational tables from the Olist Brazilian E-Commerce dataset and creating a delivery_time_days target feature for EDA, data cleaning, feature engineering, and regression modeling.
-* **Source** [Brazilian Ecommerce Delivery Time Dataset](https://www.kaggle.com/datasets/virtualarin/brazilian-ecommerce-delivery-time-dataset)
+* **Source** [Brazilian Ecommerce Delivery Time Dataset](https://www.kaggle.com/datasets/virtualarin/e-commerce-delivery-time-dataset)
 
 ---
 
@@ -51,57 +51,52 @@ The objective of this project is to develop a machine learning regression model 
 
 ---
 
+## 📈 Data Visualization
 
-## 📂 Project Structure
+1. **Visualization of missing values in data**
+- Most missing data comes from product category that is around 1.4 percent of total records.
+[Missing Values](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/missing_values.png)
 
-```text
-├── data/
-│   ├── raw_data.csv                  # Merged transactional records
-│   ├── analysed_data.csv             # Cleaned datasets post-EDA
-│   └── processed_data.csv            # Final feature-engineered matrix
-├── model/
-│   └── delivery_time_model.pkl       # Saved Champion Gradient Boosting Model
-├── notebooks/
-│   ├── 1.Data Preparation.ipynb      # Ingestion and consolidation pipeline
-│   ├── 2.Data Analysis.ipynb         # Statistical EDA and visualization
-│   ├── 3.Feature Engineering.ipynb   # Mathematical & logical transform pipeline
-│   └── 4.Model Training & Evaluation.ipynb # Training, validation, and serialization
-├── src_data/                         # Directory for raw downloaded Olist CSVs
-└── README.md                         # Project documentation
-└── app.py                            # Streamlit app
-```
+2. **How is the delivery time distributed?**
+- Delivery times are heavily right-skewed, with the vast majority of orders arriving within ten to twenty days.
+[Delivery time](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/delivery_time_distribution.png)
 
+3. **Which order statuses are most common?**
+- Almost all orders in the dataset successfully reach the delivered status, with an extremely low cancellation rate.
+(Order Status)[https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/order_status_distribution.png]
+
+4. **Which product categories have the highest average delivery time?**
+- Office furniture takes significantly longer to deliver than other categories, over twenty days per standard order.
+[Highest average delivery](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/top_10_slowest_product_delivery.png)
+
+5. **Does freight cost (total fees charged by a carrier to transport goods) increase delivery time?**
+- Higher freight costs does not guarantee faster deliveries, as many cheap shipments still experience extensive delays.
+[Freight_value_vs_delivery_time](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/freight_value_vs_delivery_time.png)
+
+6. **Does product weight affect delivery time?**
+- Product weight shows no strong correlation with delivery time, meaning heavy items do not always arrive slower.
+[product_weight_vs_delivery_time](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/product_weight_vs_delivery_time.png)
+
+7. **Which payment method is associated with the longest delivery time?**
+- Delivery speeds remained consistent across all payment methods, indicating payment type does not impacts the shipping duration.
+[delivery_time_by_payment_status](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/delivery_time_by_payment_status.png)
+
+8. **Which customer states experience the longest average delivery time?**
+- Customers located in RR and AP experience the longest average wait times for deliveries.
+[top_customer_states_by_delivery_time](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/top_customer_states_by_delivery_time.png)
+
+9. **Which seller states have the longest average delivery time?**
+- Orders from AM experienced the highest delivery time
+[top_seller_states_by_delivery_time](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/top_seller_states_by_delivery_time.png)
+
+10. **Is there a relationship between price and delivery time?**
+- Many cheap items have experienced a high delivery time as compared to expensive price 
+[price_vs_delivery_time](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/price_vs_delivery_time.png)
+
+11. **Correlation Heatmap of dataset**
+
+[correlation_heatmap](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/correlation_heatmap.png)
 ---
-
-## 🔄 End-to-End Workflow & Approach
-
-### 1. Data Preparation & Merging
-* Consolidated 8 distinct relational tables (`customers`, `orders`, `order_items`, `products`, `sellers`, `payments`, `geolocation`, `category_translation`) using standardized relational joins.
-* Identified target feature (`delivery_time_days`) by calculating the delta between order purchase and final delivery timestamps.
-* Dropped highly sparse, redundant, or leaky future-looking features to prevent data leakage.
-
-### 2. Exploratory Data Analysis (EDA)
-* Analyzed distributions of numerical features like freight price, item price, and product dimensions.
-* Investigated relationship strengths using regression plots (`sns.regplot`) against the target delivery time.
-* Handled missing values and identified outliers across logistical tracking dimensions.
-
-### 3. Feature Engineering
-Created advanced interaction features to encapsulate domain dynamics:
-* **Logistical Deltas:** `approval_hours` and `carrier_handover_hours` to isolate process bottlenecks.
-* **Temporal Fields:** Extracted `purchase_month` and `purchase_dayofweek` to capture seasonality and weekend lags.
-* **Geospatial Insights:** Derived a `distance` estimation and a boolean `same_state` indicator comparing customer and seller regions.
-* **Physical Attributes:** Engineered `product_volume`, `product_density`, and combined `package_size`.
-* **Financial Metrics:** Created `freight_ratio` to capture the relative cost burden of logistics against item base costs.
-
-### 4. Model Training & Evaluation
-* Split processed data cleanly into training and testing sets.
-* Trained and evaluated multiple predictive algorithms to establish robust baselines:
-    * Linear Regression (Baseline)
-    * K-Nearest Neighbors (KNN)
-    * Decision Tree Regressor
-    * Random Forest Regressor
-    * Gradient Boosting Regressor (Champion Model)
-* **Champion Model Selection:** Saved the fine-tuned Gradient Boosting model (`delivery_time_model.pkl`) using `joblib` for future inference deployment due to its superior $R^2$ performance.
 
 ---
 
