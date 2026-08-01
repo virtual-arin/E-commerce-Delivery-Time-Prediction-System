@@ -34,6 +34,12 @@ The objective of this project is to develop a machine learning regression model 
 
 ---
 
+## 🧑‍🍳 Data Preparation
+* Built a machine-learning-ready E-Commerce Delivery Time dataset by merging 9 relational tables from the Olist Brazilian E-Commerce dataset and creating a delivery_time_days target feature for EDA, data cleaning, feature engineering, and regression modeling.
+* **Source** [Brazilian Ecommerce Delivery Time Dataset](https://www.kaggle.com/datasets/virtualarin/brazilian-ecommerce-delivery-time-dataset)
+
+---
+
 ## 🛠️ Tech Stack
 
 * **Language:** Python
