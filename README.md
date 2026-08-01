@@ -101,15 +101,14 @@ The objective of this project is to develop a machine learning regression model 
 
 ## 📈 Results Summary
 
-The evaluated models were ranked primarily based on their Coefficient of Determination ($R^2$ Score) on unseen test data:
+The evaluated models were ranked primarily based on their ($R^2$ Score) on unseen test data:
 
-| Model | $R^2$ Score | Status |
-| :--- | :--- | :--- |
-| **Gradient Boosting** | **Highest Performance** | 🏆 *Selected Champion* |
-| Random Forest | Competitive | Candidate |
-| KNN | Moderate | Baseline |
-| Decision Tree | Moderate | Baseline |
-| Linear Regression | Lowest Performance | Baseline |
+| Model | $R^2$ Score | Status | | :--- | :--- | :--- | 
+| **Random Forest** | **0.530109** | 🏆 *Selected Champion* | 
+| Gradient Boosting | 0.496880 | Competitive / Candidate | 
+| KNN | 0.452206 | Moderate Baseline | 
+| Decision Tree | 0.372965 | Weak Baseline | 
+| Linear Regression | 0.278505 | Lowest Performance |
 
 ---
    
