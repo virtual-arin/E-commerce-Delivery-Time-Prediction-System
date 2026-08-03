@@ -27,7 +27,7 @@ The objective of this project is to develop a machine learning regression model 
 
 ---
 
-## 📉 Dataset Overview
+## 🥸 Dataset Overview
 
 * **Source:** [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) on Kaggle.
 * **Description:** The dataset contains real, anonymized commercial data from 100k orders made between 2016 and 2018 across various marketplaces in Brazil. It links multiple operational dimensions including customer location, product attributes, seller location, payment types, and detailed tracking timestamps.
