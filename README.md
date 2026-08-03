@@ -2,7 +2,7 @@
 
 ---
 
-## 🚌 Business Domain
+## 🛻 Business Domain
 
 Logistics and Supply Chain
 
@@ -27,7 +27,7 @@ The objective of this project is to develop a machine learning regression model 
 
 ---
 
-## 📊 Dataset Overview
+## 📉 Dataset Overview
 
 * **Source:** [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) on Kaggle.
 * **Description:** The dataset contains real, anonymized commercial data from 100k orders made between 2016 and 2018 across various marketplaces in Brazil. It links multiple operational dimensions including customer location, product attributes, seller location, payment types, and detailed tracking timestamps.
@@ -55,47 +55,46 @@ The objective of this project is to develop a machine learning regression model 
 
 1. **Visualization of missing values in data**
 - Most missing data comes from product category that is around 1.4 percent of total records.
-![Missing Values](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/missing_values.png)
+<img src="https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/missing_values.png" width="100%">
 
 2. **How is the delivery time distributed?**
 - Delivery times are heavily right-skewed, with the vast majority of orders arriving within ten to twenty days.
-![Delivery time](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/delivery_time_distribution.png)
+<img src="https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/delivery_time_distribution.png" width="100%">
 
 3. **Which order statuses are most common?**
 - Almost all orders in the dataset successfully reach the delivered status, with an extremely low cancellation rate.
-![Order Status](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/order_status_distribution.png)
+<img src="https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/order_status_distribution.png" width="100%">
 
 4. **Which product categories have the highest average delivery time?**
 - Office furniture takes significantly longer to deliver than other categories, over twenty days per standard order.
-![Highest average delivery](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/top_10_slowest_product_delivery.png)
+<img src="https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/top_10_slowest_product_delivery.png" width="100%">
 
 5. **Does freight cost (total fees charged by a carrier to transport goods) increase delivery time?**
 - Higher freight costs does not guarantee faster deliveries, as many cheap shipments still experience extensive delays.
-![Freight_value_vs_delivery_time](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/freight_value_vs_delivery_time.png)
+<img src="https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/freight_value_vs_delivery_time.png" width="100%">
 
 6. **Does product weight affect delivery time?**
 - Product weight shows no strong correlation with delivery time, meaning heavy items do not always arrive slower.
-![product_weight_vs_delivery_time](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/product_weight_vs_delivery_time.png)
+<img src="https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/product_weight_vs_delivery_time.png" width="100%">
 
 7. **Which payment method is associated with the longest delivery time?**
 - Delivery speeds remained consistent across all payment methods, indicating payment type does not impacts the shipping duration.
-![delivery_time_by_payment_status](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/delivery_time_by_payment_status.png)
+<img src="https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/delivery_time_by_payment_status.png" width="100%">
 
 8. **Which customer states experience the longest average delivery time?**
 - Customers located in RR and AP experience the longest average wait times for deliveries.
-![top_customer_states_by_delivery_time](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/top_customer_states_by_delivery_time.png)
+<img src="https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/top_customer_states_by_delivery_time.png" width="100%">
 
 9. **Which seller states have the longest average delivery time?**
 - Orders from AM experienced the highest delivery time
-![top_seller_states_by_delivery_time](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/top_seller_states_by_delivery_time.png)
+<img src="https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/top_seller_states_by_delivery_time.png" width="100%">
 
 10. **Is there a relationship between price and delivery time?**
 - Many cheap items have experienced a high delivery time as compared to expensive price 
-![price_vs_delivery_time](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/price_vs_delivery_time.png)
+<img src="https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/price_vs_delivery_time.png" width="100%">
 
 11. **Correlation Heatmap of dataset**
-![correlation_heatmap](https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/correlation_heatmap.png)
----
+<img src="https://github.com/virtual-arin/E-commerce-Delivery-Time-Prediction-System/blob/main/images/correlation_heatmap.png" width="100%">
 
 ---
 
